@@ -11,6 +11,11 @@
     padding-bottom: 64px !important;
 }
 
+.logo-footer {
+    text-decoration: none;
+    color: #2A7AE4;
+    font-size: 2rem;
+}
 
 .ul-list {
     list-style: none;
@@ -79,4 +84,74 @@ textarea::placeholder {
     padding: 32px;
     background-color: #fff;
     text-align: center;
+}
+
+.footer-dev a {
+    text-decoration: none;
+    color: #2A7AE4;
+}
+
+@media (max-width: 1005px) {
+    .footer-box {
+        flex-direction: column;
+    }
+    .logo-footer {
+        margin-bottom: 32px;
+    }
+
+    .ul-list li {
+        margin-bottom: 16px;
+    }
+    label{
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    input {
+        width: 370px;
+    }
+    textarea {
+        width: 370px;
+    }
+}
+
+@media (max-width: 420px) {
+    .footer-box {
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
+    }
+    .logo-footer {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    .ul-list {
+        text-align: center;
+    }
+    .ul-list li {
+        margin-bottom: 16px;
+    }
+    
+    input {
+        width: 325px;
+    }
+    textarea {
+        width: 325px;
+    }
+    label {
+        margin-top: 32px;
+    }
+    .btn-enviar {
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 365px) {
+    input {
+        width: 275px;
+    }
+    textarea {
+        width: 275px;
+    }
 }

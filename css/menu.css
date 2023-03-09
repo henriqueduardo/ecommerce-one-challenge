@@ -62,3 +62,34 @@ input.input-search::placeholder {
     width: 182px;
     text-align: center;
 }
+
+@media (max-width: 850px) {
+    .input-search {
+        width: 230px;
+    }
+}
+
+@media (max-width: 725px) {
+    .login-btn {
+        width: 80px;
+    }   
+}
+
+@media (max-width: 625px) {
+    .logo-img {
+        width: 25px;
+    }
+    .logo {
+        font-size: 1rem;
+    }
+    .input-search {
+        display: none;
+    }
+    .lupa-search {
+        width: 25px;
+        right: 0;
+        left: 35px;
+        position: relative;
+        display: block;
+    }
+}

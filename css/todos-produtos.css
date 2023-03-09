@@ -15,3 +15,9 @@
     height: 50px;
     text-align: center;
 }
+
+@media (max-width: 420px) {
+    .btn-add-produto-link {
+        font-size: 14px;
+    }
+}

@@ -18,6 +18,8 @@
 
 .novo-produto-box {
     width: 560px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
     padding-top: 64px !important;
     padding-bottom: 64px !important;
     display: flex;
@@ -45,4 +47,39 @@
     width: 560px;
     border: none;
     color: #fff;
+}
+
+@media (max-width: 600px) {
+    .btn-adm {
+        width: 130px;
+        font-size: 10px;
+    }
+    .novo-produto-box {
+        width: 400px;
+    }
+    .novo-produto-box input {
+        width: 400px;
+    }
+    .btn-add-produto {
+        width: 400px;
+    }
+}
+
+@media (max-width: 425px) {
+    .btn-adm {
+        width: 92px;
+        font-size: 7px;
+    }
+    .novo-produto-box h1 {
+        font-size: 22px;
+    }
+    .novo-produto-box {
+        width: 320px;
+    }
+    .novo-produto-box input {
+        width: 320px;
+    }
+    .btn-add-produto {
+        width: 320px;
+    }
 }

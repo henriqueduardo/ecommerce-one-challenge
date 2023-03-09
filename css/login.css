@@ -47,3 +47,32 @@
     border: none;
     width: 425px;
 }
+
+@media (max-width: 700px) {
+    .login-box h1 {
+        width: 350px;
+    }
+    .login-box input {
+        width: 350px;
+    }
+    .btn-login {
+        width: 350px;
+    }
+}
+
+@media (max-width: 420px) {
+    .login-box {
+        padding-left: 0px !important;
+        padding-right: 0px Im !important;
+        width: 250px;
+    }
+    .login-box h1 {
+        width: 250px;
+    }
+    .login-box input {
+        width: 250px;
+    }
+    .btn-login {
+        width: 250px;
+    }
+}
