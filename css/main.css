@@ -8,7 +8,7 @@
 
 .main-text {
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--color-white);
     line-height: 61px;
     position: relative;
     top: 32%;
@@ -24,8 +24,8 @@
     width: 130px;
     height: 51px;
     padding: 16px;
-    background: #2A7AE4;
-    color: #fff;
+    background: var(--color-blue);
+    color: var(--color-white);
 }
 
 @media (max-width: 600px) {
