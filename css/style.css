@@ -9,14 +9,13 @@
 @import url(todos-produtos.css);
 @import url(novo-produto.css);
 @import url(produto-espe.css);
-@import url(search.css);
 
 :root {
     --background-white:#FFFFFF;
     --background-grey: #E5E5E5;
-    --background-cyan: #EAF2FD;
+    --background-cyan: #fceb9b;
     --color-white: #FFF;
-    --color-blue: #2A7AE4;
+    --color-blue: #fdca40;
     --color-grey: #464646;
 }
 

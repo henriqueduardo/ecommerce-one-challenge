@@ -63,6 +63,20 @@ input::placeholder {
     z-index: 999;
 }
 
+input:focus-visible {
+    outline: none;
+    border: 1.3px solid var(--color-blue);
+}
+
+textarea:focus-visible {
+    outline: none;
+    border: 1px solid var(--color-blue);
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #e2e2e2 inset;
+}
+
 
 
 textarea {
