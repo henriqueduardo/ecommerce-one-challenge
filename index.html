@@ -20,7 +20,7 @@
                 <img class="logo-img" src="img/logo.png" alt="logo">
                 <a href="#" class="logo">Quasimoto</a>
                 <div class="box-search">
-                    <input class="input-search" type="text" placeholder="O que deseja encontrar?" id="filter">
+                    <input class="input-search" type="text" placeholder="Procure um produto" id="filter">
                     <img class="lupa-search" src="img/search.svg" alt="lupa pesquisar">
                 </div>
             </div>
@@ -30,10 +30,33 @@
 
     <!-- main -->
     <main class="main-bg">
-        <div class="container main-text">
-            <h1>Dezembro Promocional</h1>
-            <p>Produtos selecionados com 33% de desconto</p>
-            <a class="btn-main" href="produtos.html">Ver produtos</a>
+        <div class="container">
+            <div class="banner active">
+                <div class="main-text">
+                    <h1>Abril Promocional.</h1>
+                    <p>Produtos selecionados com 33% de desconto.</p>
+                    <a class="btn-main" href="produtos.html">Ver produtos</a>
+                </div>
+              </div>
+              <div class="banner">
+                <div class="main-text">
+                    <h1>Promoções exclusivas.</h1>
+                    <p>Aproveite nossas ofertas, 10x sem juros. Frete grátis.</p>
+                    <a class="btn-main" href="produtos.html">Ver produtos</a>
+                </div>
+              </div>
+              <div class="banner">
+                <div class="main-text">
+                    <h1>$oul $old $eparately.</h1>
+                    <p>Charutos, cortadores, fumo para cachimbo e outros.</p>
+                    <a class="btn-main" href="produtos.html">Ver produtos</a>
+                </div>
+              </div>
+              <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
         </div>
     </main>
 
@@ -182,19 +205,19 @@
                 <li><a href="#footer">Anuncie aqui</a></li>
             </ul>
             <div class="form">
-                <form action="">
+                <form method="post">
                     <label for="Nome">Fale conosco</label>
-                    <input type="text" placeholder="Nome completo">
-                    <textarea name="mensagem" placeholder="Escreva sua mensagem" id="" cols="30" rows="10"></textarea>
+                    <input id="nome" type="text" placeholder="Nome completo">
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" id="" cols="30" rows="10"></textarea>
                 </form>
-                <button class="btn-enviar">Enviar mensagem</button>
+                <button class="btn-enviar" id="submit" onclick="validarForm()">Enviar mensagem</button>
             </div>
         </div>
         <div class="footer-dev">
             <p>Desenvolvido por <a href="https://github.com/duu19">Eduardo Henrique</a></p>
         </div>
     </footer>
-
+   
 <script src="js/script.js"></script>
 </body>
 </html>

@@ -32,39 +32,43 @@
     <main class="novo-produto-bg">
         <div class="novo-produto-box container">
             <h1>Adicionar novo produto</h1>
-            <input type="text" placeholder="URL da imagem">
-            <input type="text" placeholder="Categoria">
-            <input type="text" placeholder="Nome do produto">
-            <input type="text" placeholder="Preço do produto">
-            <input type="text" placeholder="Descrição do produto">
-            <button class="btn-add-produto">Adicionar produto</button>
+            <form method="post" action="">
+                <input id="imgInput" type="text" placeholder="URL da imagem" required>
+                <input id="categoria" type="text" placeholder="Categoria" required>
+                <input id="nomeProduto" type="text" placeholder="Nome do produto" maxlength="20" minlength="4" required>
+                <input id="preco" type="number" placeholder="Preço do produto" required>
+                <input id="descricao" type="text" placeholder="Descrição do produto" maxlength="150" minlength="4" required>
+                <button type="reset" class="btn-add-produto" id="submit" onclick="validarProduto()" >Adicionar produto</button>
+            </form>
         </div>
     </main>
 
-    <!-- footer -->
-    <footer class="footer-bg">
-        <div class="container footer-box">
-            <a href="#" class="logo-footer">Quasimoto</a>
-            <ul class="ul-list">
-                <li><a href="#footer">Quem somos nós</a></li>
-                <li><a href="#footer">Politica de privacidade</a></li>
-                <li><a href="#footer">Programa fidelidade</a></li>
-                <li><a href="#footer">Nossas lojas</a></li>
-                <li><a href="#footer">Franquias</a></li>
-                <li><a href="#footer">Anuncie aqui</a></li>
-            </ul>
-            <div class="form">
-                <form action="">
-                    <label for="Nome">Fale conosco</label>
-                    <input type="text" placeholder="Nome completo">
-                    <textarea name="mensagem" placeholder="Escreva sua mensagem" id="" cols="30" rows="10"></textarea>
-                </form>
-                <button class="btn-enviar">Enviar mensagem</button>
-            </div>
+ <!-- footer -->
+ <footer class="footer-bg" id="footer">
+    <div class="container footer-box">
+        <a href="#" class="logo-footer">Quasimoto</a>
+        <ul class="ul-list">
+            <li><a href="#footer">Quem somos nós</a></li>
+            <li><a href="#footer">Politica de privacidade</a></li>
+            <li><a href="#footer">Programa fidelidade</a></li>
+            <li><a href="#footer">Nossas lojas</a></li>
+            <li><a href="#footer">Franquias</a></li>
+            <li><a href="#footer">Anuncie aqui</a></li>
+        </ul>
+        <div class="form">
+            <form method="post" action="">
+                <label for="Nome">Fale conosco</label>
+                <input id="nome" type="text" placeholder="Nome completo">
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" id="" cols="30" rows="10"></textarea>
+            </form>
+            <button class="btn-enviar" id="submit" onclick="validarForm()">Enviar mensagem</button>
         </div>
-        <div class="footer-dev">
-            <p>Desenvolvido por <a href="#">Eduardo Henrique</a></p>
-        </div>
-    </footer>
+    </div>
+    <div class="footer-dev">
+        <p>Desenvolvido por <a href="https://github.com/duu19">Eduardo Henrique</a></p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>

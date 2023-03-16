@@ -85,8 +85,8 @@
         </section>
     </main>
 
-    <!-- footer -->
-    <footer class="footer-bg">
+     <!-- footer -->
+     <footer class="footer-bg" id="footer">
         <div class="container footer-box">
             <a href="#" class="logo-footer">Quasimoto</a>
             <ul class="ul-list">
@@ -98,16 +98,16 @@
                 <li><a href="#footer">Anuncie aqui</a></li>
             </ul>
             <div class="form">
-                <form action="">
+                <form method="post" action="">
                     <label for="Nome">Fale conosco</label>
-                    <input type="text" placeholder="Nome completo">
-                    <textarea name="mensagem" placeholder="Escreva sua mensagem" id="" cols="30" rows="10"></textarea>
+                    <input id="nome" type="text" placeholder="Nome completo">
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" id="" cols="30" rows="10"></textarea>
                 </form>
-                <button class="btn-enviar">Enviar mensagem</button>
+                <button class="btn-enviar" id="submit" onclick="validarForm()">Enviar mensagem</button>
             </div>
         </div>
         <div class="footer-dev">
-            <p>Desenvolvido por <a href="#">Eduardo Henrique</a></p>
+            <p>Desenvolvido por <a href="https://github.com/duu19">Eduardo Henrique</a></p>
         </div>
     </footer>
 

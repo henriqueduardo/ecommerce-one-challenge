@@ -32,12 +32,18 @@ header {
 }
 
 .input-search {
-    height: 40px;
+    padding: 10px !important;
+    padding-left: 25px !important;
     width: 390px;
     padding: 8px 16px;
     background: #F5F5F5;
     border-radius: 20px;
     border: none;
+}
+
+.input-search:focus-visible {
+    outline: none;
+    border: 1px solid var(--color-blue);
 }
 
 .lupa-search {
