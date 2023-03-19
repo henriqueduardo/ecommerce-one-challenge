@@ -32,8 +32,8 @@
     <main class="login-bg">
         <div class="login-box container">
             <h1>Iniciar sessão</h1>
-            <input type="email" placeholder="Digite seu e-mail" id="email">
-            <input type="password" placeholder="Digite sua senha" id="senha">
+            <input type="email" placeholder="Digite seu e-mail" id="email" required>
+            <input type="password" placeholder="Digite sua senha" id="senha" pattern="^(?=.*\d)(?=.*[az])(?=.*[AZ]).{4,8}$" required>
             <button class="btn-login" id="submit" onclick="validarLogin()">Entrar</button>
         </div>
     </main>

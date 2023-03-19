@@ -34,10 +34,9 @@
             <h1>Adicionar novo produto</h1>
             <form method="post" action="">
                 <input id="imgInput" type="text" placeholder="URL da imagem" required>
-                <input id="categoria" type="text" placeholder="Categoria" required>
                 <input id="nomeProduto" type="text" placeholder="Nome do produto" maxlength="20" minlength="4" required>
                 <input id="preco" type="number" placeholder="Preço do produto" required>
-                <input id="descricao" type="text" placeholder="Descrição do produto" maxlength="150" minlength="4" required>
+                <input id="produtoId" type="number" placeholder="ID do produto" required>
                 <button type="reset" class="btn-add-produto" id="submit" onclick="validarProduto()" >Adicionar produto</button>
             </form>
         </div>

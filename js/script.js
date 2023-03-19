@@ -1,4 +1,4 @@
-// input - pesquisar produtos
+// search - pesquisar produtos
 const cards = document.querySelectorAll('.cards');
 const filterInput = document.getElementById('filter');
 
@@ -53,7 +53,7 @@ function validarLogin() {
       return;
     }
     if(senha.value == "") {
-    alert("Senha incorreta!");
+    alert("Digite sua senha!");
     senha.focus();
     return;
     }
