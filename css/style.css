@@ -9,6 +9,7 @@
 @import url(todos-produtos.css);
 @import url(novo-produto.css);
 @import url(produto-espe.css);
+@import url(editar.css);
 
 :root {
     --background-white:#FFFFFF;
