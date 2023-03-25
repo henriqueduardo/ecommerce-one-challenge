@@ -1,21 +1,29 @@
-//GET
+// produtos
 const listaProdutos = () =>
-  fetch("http://localhost:3000/produto")
-    .then((resposta) => resposta.json())
-    .catch((error) => console.log(error));
+fetch("http://localhost:3000/produto", {
+    headers: {
+    "Access-Control-Allow-Origin": "*",
+    },
+    mode: "cors",
+})
+  .then((res) => res.json())
+  .catch((error) => console.log(error));
 
-const listarUmProduto = (id) => {
-  return fetch(`http://localhost:3000/produto/${id}`).then((resposta) => {
-    return resposta.json();
-  });
+    
+const pegarProduto = (id) => {
+    return fetch(`http://localhost:3000/produto/${id}`).then((res) => {
+      return res.json();
+    });
 };
 
-//POST
+// criar um novo produto
 const criarProduto = (name, imgUrl, price, id) => {
   return fetch("http://localhost:3000/produto", {
     method: "POST",
     headers: {
+      "Access-Control-Allow-Origin": "*",
       "Content-Type": "application/json",
+      datatype: 'application/json',
     },
     body: JSON.stringify({
       name,
@@ -23,47 +31,51 @@ const criarProduto = (name, imgUrl, price, id) => {
       price,
       id
     }),
-  }).then((resposta) => {
-    if (resposta.ok) {
-      return resposta.body;
+  }).then((res) => {
+    if (res.ok) {
+      return res.body;
     }
     throw new Error("Não foi possível criar a porra produtoVNBJASKDB");
   });
 };
 
-// PUT/PATCH
-const editarProduto = async (name, imgUrl, price, id, description) => {
+// editar produto existente
+const editarProduto = async (id, name, price, imgUrl) => {
   return fetch(`http://localhost:3000/produto/${id}`, {
     method: "PATCH",
     headers: {
+      //"Access-Control-Allow-Origin": "*",
       "Content-Type": "application/json",
+      //datatype: 'application/json',
     },
     body: JSON.stringify({
       name,
-      imgUrl,
       price,
-      description
+      imgUrl,
     }),
   })
-    .then((resposta) => {
-      return resposta.json();
+    .then((res) => {
+      return res.json();
     })
     .catch((error) => console.log(error));
 };
 
-// DELETE
+// deletar um produto
 const deletarProduto = async (id) => {
   return await fetch(`http://localhost:3000/produto/${id}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      datatype: 'application/json',
     },
   });
 };
 
+// exportar services
 export const services = {
   listaProdutos,
-  listarUmProduto,
+  pegarProduto,
   criarProduto,
   editarProduto,
   deletarProduto,

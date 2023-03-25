@@ -49,6 +49,11 @@
     color: var(--color-white);
 }
 
+#inputUpload {
+    background: var(--color-blue);
+    color: var(--color-white);
+}
+
 @media (max-width: 600px) {
     .btn-adm {
         width: 130px;

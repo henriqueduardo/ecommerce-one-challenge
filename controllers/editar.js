@@ -1,27 +1,28 @@
 import { services } from "../js/services.js";
 
 const getURL = new URL(window.location);
-
 const id = getURL.searchParams.get("id");
 
-const imagemUrl = document.querySelector("[data-url]");
-const inputNome = document.querySelector("[data-nome]");
-const inputPreco = document.querySelector("[data-preco]");
-const inputDescricao = document.querySelector("[data-descricao]");
+const imagem = document.querySelector("[data-url]");
+const nome = document.querySelector("[data-nome]");
+const preco = document.querySelector("[data-preco]");
 
-services.listaUmProduto(id).then((dados) => {
-  imagemUrl.setAttribute("src", dados.imgUrl);
-  inputNome.value = dados.name;
-  inputPreco.value = dados.price;
-  inputDescricao.value = dados.description;
+services.pegarProduto(id).then((dados) =>
+ {
+  imagem.setAttribute("src", dados.imgUrl);
+  nome.value = dados.name;
+  preco.value = dados.price;
 });
 
 const formulario = document.querySelector("[data-form]");
 formulario.addEventListener("submit", (evento) => {
   evento.preventDefault();
-
   services
-    .editarProduto(id, inputNome.value, inputPreco.value, inputDescricao.value)
+    .editarProduto(
+      id,
+      nome.value,
+      preco.value,
+    )
     .then(() => {
       window.location.href = "../produtos.html";
     });
