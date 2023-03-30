@@ -40,7 +40,7 @@
 form {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
 }
 
 label {
@@ -86,13 +86,20 @@ input:-webkit-autofill {
 .btn-enviar {
     margin-top: 8px;
     display: flex;
-    align-self: end;
+    align-self: start;
     padding: 16px;
     background: var(--color-blue);
     color: var(--color-white);
     justify-content: center;
     border: none;
     cursor: pointer;
+}
+
+#erro-nome, #erro-mensagem {
+    height: auto;
+    color: var(--color-blue);
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .footer-dev {

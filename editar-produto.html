@@ -38,32 +38,35 @@
         </div>
     </main>
 
-     <!-- footer -->
- <footer class="footer-bg" id="footer">
-    <div class="container footer-box">
-        <a href="#" class="logo-footer">Quasimoto</a>
-        <ul class="ul-list">
-            <li><a href="#footer">Quem somos nós</a></li>
-            <li><a href="#footer">Politica de privacidade</a></li>
-            <li><a href="#footer">Programa fidelidade</a></li>
-            <li><a href="#footer">Nossas lojas</a></li>
-            <li><a href="#footer">Franquias</a></li>
-            <li><a href="#footer">Anuncie aqui</a></li>
-        </ul>
-        <div class="form">
-            <form method="post" action="">
-                <label for="Nome">Fale conosco</label>
-                <input id="nome" type="text" placeholder="Nome completo">
-                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" id="" cols="30" rows="10"></textarea>
-            </form>
-            <button class="btn-enviar" id="submit" onclick="validarForm()">Enviar mensagem</button>
+    <!-- footer -->
+    <footer class="footer-bg" id="footer">
+        <div class="container footer-box">
+            <a href="#" class="logo-footer">Quasimoto</a>
+            <ul class="ul-list">
+                <li><a href="#footer">Quem somos nós</a></li>
+                <li><a href="#footer">Politica de privacidade</a></li>
+                <li><a href="#footer">Programa fidelidade</a></li>
+                <li><a href="#footer">Nossas lojas</a></li>
+                <li><a href="#footer">Franquias</a></li>
+                <li><a href="#footer">Anuncie aqui</a></li>
+            </ul>
+            <div class="form">
+                <form action="" name="formularioContato" onsubmit="return validarContato()">
+                    <label for="Nome">Fale conosco</label>
+                    <input id="nome" name="nome" type="text" placeholder="Nome completo">
+                    <div id="erro-nome"></div>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" id="" cols="30" rows="10" ></textarea>
+                    <div id="erro-mensagem"></div>
+                    <button class="btn-enviar" type="submit">Enviar mensagem</button>
+                </form>
+            </div>
         </div>
-    </div>
-    <div class="footer-dev">
-        <p>Desenvolvido por <a href="https://github.com/duu19">Eduardo Henrique</a></p>
-    </div>
-</footer>
+        <div class="footer-dev">
+            <p>Desenvolvido por <a href="https://github.com/duu19">Eduardo Henrique</a></p>
+        </div>
+    </footer>
 
 <script type="module" src="controllers/editar.js"></script>
+<script src="js/forms.js"></script> 
 </body>
 </html>
