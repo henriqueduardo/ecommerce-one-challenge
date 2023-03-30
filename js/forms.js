@@ -23,18 +23,10 @@ function validarContato() {
       return false;
     }
     
-    if (mensagem == "" || mensagem.length < 20) {
+    if (mensagem == "" || mensagem.length < 16) {
       document.getElementById("erro-mensagem").innerHTML = "Detalhe sua mensagem o máximo possível!";
       return false;
     }
 
     return true;
   }
-
-/*
-const btn = document.getElementById("submit");
-btn.addEventListener("click", function(e){
-  e.preventDefault();
-  console.log("não recarregar a porra da pagina");
-})
-*/
