@@ -4,15 +4,16 @@
 
 Para acessar o site, clique <a href="https://one-ecommerce-quas.netlify.app/" target="_blank">aqui</a>
 
-<h2>O site tem uma interface de usuário intuitiva. É possível realizar as seguintes operações:</h2>
+<h2>Interface de usuário intuitiva, é possível realizar as seguintes operações:</h2>
 
 <li>Criar um novo produto clicando no botão "Adicionar produto" e preenchendo o formulário</li>
 <li>Atualizar um produto clicando no botão "Editar" ao lado do produto e modificando o formulário</li>
 <li>Excluir um produto clicando no botão "Excluir" ao lado do produto</li>
+<br>
+<br>
+<img src="img/print.png" alt="print" style="width: 800px;">
 
-<img src="img/print.png" alt="print" style="width: 550px;">
-
-<h2>Instalar e rodar</h2>
+<h2>Rodar o projeto</h2>
 
 <ol>
 <li>Baixe o repositório</li>
