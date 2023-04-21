@@ -16,7 +16,7 @@ Para acessar o site, clique <a href="https://one-ecommerce-quas.netlify.app/" ta
 <h2>Rodar o projeto</h2>
 
 <ol>
-<li>Baixe o repositório</li>
+<li>Clone o repositório</li>
 <li>Abra o terminal do VSCode e execute o comando: json-server --watch db.json</li>
 </ol>
 
