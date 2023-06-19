@@ -143,42 +143,6 @@
       "id": 18,
       "alt": "produto",
       "description": "Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam"
-    },
-    {
-      "name": "Lorem",
-      "imgUrl": "https://images.unsplash.com/photo-1612659429081-4d261418adc1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "price": "R$ 00,00",
-      "id": 19
-    },
-    {
-      "name": "BBS Aranha",
-      "imgUrl": "https://scontent.fbau2-1.fna.fbcdn.net/v/t1.6435-9/67821343_2072610479713941_6956880544504217600_n.jpg?stp=dst-jpg_p960x960&_nc_cat=102&ccb=1-7&_nc_sid=36a2c1&_nc_ohc=ZDjIgv1USlYAX-c7O7N&_nc_ht=scontent.fbau2-1.fna&oh=00_AfDtTfTvn8bvRsqXw77SqfWHRgEYybXi5NIcnJyAqcQysQ&oe=6445979D",
-      "price": "R$ 60,00",
-      "id": 20
-    },
-    {
-      "name": "Cohiba CC",
-      "imgUrl": "https://images.pexels.com/photos/10233536/pexels-photo-10233536.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "price": "R$ 60,00",
-      "id": 21
-    },
-    {
-      "name": "Ramsay Lowlow",
-      "imgUrl": "https://images.unsplash.com/photo-1648052845121-dec461c2f7d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=399&q=80",
-      "price": "R$ 60,00",
-      "id": 22
-    },
-    {
-      "name": "s14",
-      "imgUrl": "https://images.unsplash.com/photo-1648052845049-d6e18306ae94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=399&q=80",
-      "price": "R$ 60,00",
-      "id": 23
-    },
-    {
-      "name": "TAS",
-      "imgUrl": "http://speedhunters-wp-production.s3.amazonaws.com/wp-content/uploads/2023/01/12232317/DSC04912-copy-1200x800.jpg",
-      "price": "R$ 00,00",
-      "id": 24
     }
   ]
 }
